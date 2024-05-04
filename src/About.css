@@ -1,0 +1,60 @@
+.about {
+  width: 100%;
+  margin: 64px auto 64px auto;
+  padding: 64px;
+  background-color: #ededed;
+}
+
+.self {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.self img {
+  margin-top: 10px;
+}
+
+.self .about-text {
+  margin-top: -48px;
+  padding: 12px;
+  margin-left: 4%;
+  background-color: #c1e8ff;
+  width: 64%;
+  border-radius: 24px;
+}
+
+.self .about-text h1 {
+  margin-bottom: 10px;
+}
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whattheysay {
+  width: 74%;
+}
+
+.testimoni {
+  background-color: #c1e8ff;
+  padding: 24px;
+}
+
+.testimoni p {
+  text-decoration: dashed;
+}
+
+.identity {
+  display: flex;
+  margin-top: 10px;
+}
+
+.identitytext {
+  margin-left: 16px;
+  text-align: left;
+  justify-content: left;
+}

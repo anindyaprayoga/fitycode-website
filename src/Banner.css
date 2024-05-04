@@ -1,0 +1,45 @@
+.banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  background: url("./assets/banner.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  border-bottom-right-radius: 142px;
+  padding: 0 10%;
+}
+
+.banner h1 {
+  font-size: 100px;
+}
+
+.banner img {
+  margin-top: 16%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8%;
+  width: 94%;
+  height: 74%;
+  border-radius: 48px;
+}
+
+.banner button {
+  position: absolute;
+  width: 124px;
+  height: 64px;
+  border-radius: 48px;
+  bottom: 128px;
+  left: 316px;
+  color: white;
+  background-color: #00abf0;
+  font-size: 16px;
+  font-weight: 640;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
