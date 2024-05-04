@@ -8,9 +8,9 @@ const Login = () => {
     <>
     <Header />
     <div className="login-body">
-    <div class="main">
+    <div className="main">
         <input type="checkbox" id="chk" aria-hidden="true" />
-        <div class="signup">
+        <div className="signup">
             <form action="">
                 <label for="chk" aria-hidden="true">Sign up</label>
                 <input type="text" name="name" placeholder="Name" required />
