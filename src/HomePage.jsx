@@ -10,25 +10,18 @@ import Footer from './Footer'
 
 const HomePage = () => {
   return (
-    <>
-        <div>
-          <Header />
-          <Banner />
-        </div>
-        <div>
-          <Features />
-        </div>
-        <div>
-          <Courses />
-        </div>
-        <div>
-          <About />
-        </div>
-        <div>
-          <Footer />
-        </div>
-    </>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '350vh' }}>
+      <div className="main-content" style={{ flexGrow: 1 }}>
+        <Header />
+        <Banner />
+        <Features />
+        <Courses />
+        <About />
+      </div>
+      <Footer />
+    </div>
   )
 }
+
 
 export default HomePage

@@ -1,12 +1,12 @@
 .features {
-  margin-top: 58%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 12px;
+  position: relative;
+  top: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 64px;
+  flex-grow: 1;
 }
 
 .features .square1 {

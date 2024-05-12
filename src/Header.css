@@ -12,6 +12,7 @@
   z-index: 100;
   background-color: white;
   border-radius: 0 0 48px 48px;
+  flex-grow: 1;
 }
 
 .logo {
@@ -60,7 +61,7 @@
   color: black;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 35px;
+  margin-left: 2.1875rem;
   transition: 0.3s;
 }
 

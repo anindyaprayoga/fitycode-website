@@ -1,16 +1,19 @@
 .course-container {
   box-sizing: border-box;
-  height: 140vh;
+  height: auto;
+  padding-top: 100px; /* Ganti dengan tinggi Header Anda */
   background: url("./assets/courselistbackground.png") no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
+/* sisanya sama */
 
 .course-container h1 {
-  font-size: 48px;
+  font-size: 2em; /* Mengubah ukuran font menjadi 2em */
 }
 
 .course-card-container {
@@ -18,33 +21,79 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* background-color: blue; */
+  width: 100%; /* Tambahkan ini agar kontainer mengisi lebar penuh */
 }
 
-.course-card1 {
-  width: 640px;
-  height: 360px;
-  margin-bottom: 18px;
-  /* background-color: red; */
-}
-
-.course-card2 {
-  margin-left: 10%;
-  width: 640px;
-  height: 360px;
-  margin-bottom: 18px;
-  /* background-color: red; */
-}
-
-.course-card3 {
-  width: 640px;
-  height: 360px;
-  /* background-color: red; */
-}
-
+.course-card1,
+.course-card2,
+.course-card3,
 .course-card4 {
-  margin-left: 10%;
-  width: 640px;
-  height: 360px;
-  /* background-color: red; */
+  width: 100%; /* Mengubah lebar menjadi 100% agar kartu mengisi lebar penuh */
+  height: auto; /* Mengubah tinggi menjadi auto agar kartu dapat mengisi ruang yang dibutuhkan */
+  margin-bottom: 1em;
+  border-radius: 15px; /* Mengubah margin menjadi 1em */
+}
+
+.course-card1 img,
+.course-card2 img,
+.course-card3 img,
+.course-card4 img {
+  border-radius: 15px;
+}
+
+/* Definisikan keyframes untuk animasi */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.course-card1,
+.course-card3 {
+  /* kode sebelumnya */
+  animation: slideInFromLeft 1s normal; /* Tambahkan animasi ini */
+}
+
+.course-card2,
+.course-card4 {
+  /* kode sebelumnya */
+  animation: slideInFromRight 1s normal; /* Tambahkan animasi ini */
+}
+
+/* Media query untuk layar yang lebih besar */
+@media (min-width: 640px) {
+  .course-card1,
+  .course-card2,
+  .course-card3,
+  .course-card4 {
+    width: 50%; /* Mengubah lebar menjadi 50% agar dua kartu dapat ditampilkan dalam satu baris */
+    height: auto; /* Mengubah tinggi menjadi auto agar kartu dapat mengisi ruang yang dibutuhkan */
+    margin-bottom: 1em; /* Mengubah margin menjadi 1em */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .course-card1,
+  .course-card2,
+  .course-card3,
+  .course-card4 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }

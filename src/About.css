@@ -1,8 +1,11 @@
 .about {
+  position: relative;
+  top: 230%;
   width: 100%;
   margin: 64px auto 64px auto;
   padding: 64px;
   background-color: #ededed;
+  flex-grow: 1;
 }
 
 .self {

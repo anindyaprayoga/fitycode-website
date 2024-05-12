@@ -11,7 +11,7 @@ const ComingSoon = () => {
     <>
       <Header />
     <div class="coming-soon">
-      <img src={comingsoonbackground} alt="" width={1920} height={1080} className='background-comingsoon'/>
+      <img src={comingsoonbackground} alt="" width={1660} height={760} className='background-comingsoon'/>
       <img src={fitycode} alt="" className='logo-comingsoon'/>
       <h1>Coming Soon....</h1>
     </div>

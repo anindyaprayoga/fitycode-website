@@ -1,5 +1,5 @@
 .banner {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   bottom: 0;
@@ -12,6 +12,7 @@
   align-items: center;
   border-bottom-right-radius: 142px;
   padding: 0 10%;
+  flex-grow: 1;
 }
 
 .banner h1 {
@@ -33,11 +34,11 @@
   width: 124px;
   height: 64px;
   border-radius: 48px;
-  bottom: 128px;
-  left: 316px;
+  bottom: 10%;
+  left: 16%;
   color: white;
   background-color: #00abf0;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 640;
   text-align: center;
   justify-content: center;
