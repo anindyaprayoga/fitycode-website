@@ -1,0 +1,102 @@
+/* General Styles */
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  /* Background color changed to dark */
+  background-color: #333; /* Dark gray background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Darker shadow for contrast */
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Question Styling */
+.question {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #fff; /* White text color for question */
+}
+
+.quiz h2 {
+  font-size: 2rem; /* Adjust font size as needed */
+  margin-bottom: 20px;
+  color: #fff; /* Bright white text color for heading */
+}
+
+/* Answer Options Styling */
+.answer-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.answer-option {
+  margin: 10px 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.answer-option input {
+  margin-right: 5px;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background-color: #333; /* Dark gray background for radio buttons */
+}
+
+.answer-option input:checked {
+  background-color: #007bff; /* Light blue color for selected radio button */
+  border-color: #007bff;
+}
+
+/* Check Answer Button Styling */
+.check-answer {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  width: 200px;
+  margin: 20px auto;
+}
+
+.check-answer:hover {
+  background-color: #54a7ff;
+}
+
+.check-answer[disabled] {
+  background-color: #ccc;
+  cursor: default;
+  opacity: 0.7;
+}
+
+/* Feedback Messages */
+.feedback {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.correct-feedback {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect-feedback {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive Design (Optional) */
+@media (max-width: 768px) {
+  .answer-options {
+    flex-direction: column;
+  }
+}

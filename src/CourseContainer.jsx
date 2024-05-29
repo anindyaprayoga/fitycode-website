@@ -16,7 +16,7 @@ const CourseContainer = () => {
         {/* <img src={background} alt="" /> */}
         <h1>Course List</h1>
         <div className="course-card-container">
-            <a href="/courselesson">
+            <a href="/CourseLessonModul1">
             <div className="course-card1">
                 <img src={ccard} alt="" />
             </div>

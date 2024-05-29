@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from './Header'
-import "./CourseLesson.css"
-import helloworldsnippet from "./assets/helloworldsnippet.jpg"
-import gccsnippet from "./assets/gccsnippet.jpg"
-import hellosnippet from "./assets/hellosnippet.jpg"
-import helloworldoutputsnippet from "./assets/helloworldoutputsnippet.jpg"
+import Header from '../../Header'
+import "./CourseLessonModul1.css"
+import helloworldsnippet from "./Courses Assets/helloworldsnippet.jpg"
+import gccsnippet from "./Courses Assets/gccsnippet.jpg"
+import hellosnippet from "./Courses Assets/hellosnippet.jpg"
+import helloworldoutputsnippet from "./Courses Assets/helloworldoutputsnippet.jpg"
 
 const CourseLesson = () => {
   return (
@@ -89,10 +89,12 @@ const CourseLesson = () => {
             <div className='footer-title'>
                 <h1>starting the journey with "Hello World"</h1>
             </div>
+            <a href="/CourseLessonModul2">
             <div className='next'>
                 <h1>next</h1>
                 <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 32 32"><path fill="white" d="m16 8l-1.43 1.393L20.15 15H8v2h12.15l-5.58 5.573L16 24l8-8z"></path><path fill="white" d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14m0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4"></path></svg>
             </div>
+            </a>
         </footer>
     </div>
     </>
